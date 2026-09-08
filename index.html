@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="only light">
+<meta name="supported-color-schemes" content="light">
+<title>Telephely Megnyitó Kaposváron | Chemical Seed</title>
+<meta name="description" content="Chemical-Seed új telephely megnyitó Kaposváron, október 15-én! Ismerd meg új bázisunkat, nézd meg élőben gépparkunkat, találkozz csapatunkkal. Regisztrálj most!">
+
+<!-- TODO iG: hozz létre GoatCounter subdomaint ehhez a kampányhoz, ha szeretnéd mérni (pl. cs-kaposvar-megnyito.goatcounter.com) -->
+<script data-goatcounter="https://cs-kaposvar-megnyito.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.gep.chemicalseed.hu/kaposvar-megnyito/">
+<meta property="og:title" content="Telephely Megnyitó Kaposváron | Chemical Seed">
+<meta property="og:description" content="Új Chemical-Seed telephely nyílik Kaposváron október 15-én. Ismerd meg új bázisunkat, nézd meg élőben gépparkunkat — regisztrálj most!">
+<meta property="og:image" content="https://www.gep.chemicalseed.hu/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="hu_HU">
+<meta property="og:site_name" content="Chemical Seed">
+
+<!-- Twitter/X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Telephely Megnyitó Kaposváron | Chemical Seed">
+<meta name="twitter:description" content="Új Chemical-Seed telephely nyílik Kaposváron október 15-én. Regisztrálj most!">
+<meta name="twitter:image" content="https://www.gep.chemicalseed.hu/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Inter:wght@400;500;600;700;800&family=Archivo+Black&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: only light;
+  --bg:#f4f4f2;
+  --bg-alt:#ececea;
+  --ink:#0e0e0e;
+  --ink-soft:#4a4a4a;
+  --ink-dim:#8a8a88;
+  --line:#d8d8d5;
+  --accent:#f7b119;
+  --accent-deep:#b5820b;
+  --grad-brand:linear-gradient(135deg,#ffc93c 0%,#f7b119 45%,#e08900 100%);
+  --error:#e30613;
+  --white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.65;overflow-x:hidden}
+img{max-width:100%;display:block}
+.container{max-width:1240px;margin:0 auto;padding:0 24px}
+.display{font-family:'Michroma',sans-serif;text-transform:uppercase}
+
+/* ===== NAV ===== */
+.nav{position:sticky;top:0;z-index:100;background:rgba(244,244,242,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--grad-brand)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 24px;max-width:1240px;margin:0 auto}
+.nav .logo{font-family:'Michroma',sans-serif;font-size:1rem;letter-spacing:.28em;text-transform:uppercase;text-decoration:none;color:var(--ink)}
+.nav-cta{font-family:'Michroma',sans-serif;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;color:var(--bg);background:var(--ink);padding:12px 26px;border-radius:2px;transition:background .2s}
+.nav-cta:hover{background:var(--grad-brand);color:var(--ink)}
+
+/* ===== HERO ===== */
+.hero{position:relative;padding:60px 0 40px;overflow:hidden;background:radial-gradient(ellipse 75% 55% at 50% -12%,rgba(247,177,25,.18),transparent 65%)}
+.hero-inner{position:relative;max-width:1240px;margin:0 auto;padding:0 24px}
+.hero-kicker{text-align:center;font-family:'Michroma',sans-serif;font-size:clamp(.7rem,1.6vw,.95rem);letter-spacing:.5em;text-transform:uppercase;color:var(--accent-deep);margin-bottom:6px}
+.hero-giant{position:relative;text-align:center;font-family:'Archivo Black',sans-serif;font-size:clamp(3rem,12vw,11rem);line-height:.9;letter-spacing:-.02em;color:var(--ink);user-select:none;white-space:nowrap}
+.hero-giant .thin{color:transparent;-webkit-text-stroke:2px var(--accent-deep)}
+.hero-giant .solid{background:var(--grad-brand);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-photo{position:relative;margin:42px calc(50% - 50vw) 0;height:clamp(280px,50vw,560px);overflow:hidden}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.hero-photo .caption{position:absolute;left:24px;bottom:20px;font-family:'JetBrains Mono',monospace;font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink);font-weight:600;background:linear-gradient(135deg,rgba(255,201,60,.94),rgba(247,177,25,.94));padding:8px 16px;backdrop-filter:blur(4px)}
+/* side menu */
+.side-menu{position:absolute;right:24px;top:120px;z-index:5;display:flex;flex-direction:column;gap:18px;text-align:right}
+.side-menu a{font-family:'Michroma',sans-serif;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);text-decoration:none;padding-bottom:6px;border-bottom:1px solid var(--ink);min-width:150px;transition:color .2s,border-color .2s}
+.side-menu a:hover{color:var(--accent-deep);border-color:var(--accent-deep)}
+/* location marker left */
+.hero-marker{position:absolute;left:24px;top:130px;z-index:5;font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.2em;color:var(--ink-soft);writing-mode:vertical-rl;transform:rotate(180deg)}
+.hero-sub{text-align:center;max-width:620px;margin:36px auto 0;color:var(--ink-soft);font-size:1rem;position:relative;z-index:3}
+.hero-sub strong{color:var(--ink)}
+.hero-actions{text-align:center;margin-top:30px;position:relative;z-index:3}
+.btn-primary{display:inline-block;font-family:'Michroma',sans-serif;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;background:var(--ink);color:var(--bg);text-decoration:none;padding:18px 48px;border-radius:2px;transition:background .2s,transform .15s}
+.btn-primary:hover{background:var(--grad-brand);color:var(--ink);transform:translateY(-2px);box-shadow:0 12px 34px rgba(247,177,25,.35)}
+.btn-micro{display:block;margin-top:14px;font-size:.85rem;color:var(--ink-dim)}
+
+/* ===== COUNTDOWN ===== */
+.countdown{display:flex;justify-content:center;gap:0;margin:50px auto 0;max-width:640px;border:1px solid var(--ink);background:var(--white);position:relative;z-index:3}
+.cd-box{flex:1;text-align:center;padding:20px 8px;border-right:1px solid var(--ink)}
+.cd-box:last-child{border-right:none}
+.cd-box .num{font-family:'JetBrains Mono',monospace;font-size:clamp(1.5rem,4vw,2.4rem);font-weight:700;background:var(--grad-brand);-webkit-background-clip:text;background-clip:text;color:transparent}
+.cd-box .lbl{font-family:'Michroma',sans-serif;font-size:.55rem;letter-spacing:.25em;text-transform:uppercase;color:var(--ink-dim)}
+
+/* ===== INVITÁLÓ / A MEGNYITÓ ===== */
+.about{padding:110px 0;background:linear-gradient(180deg,var(--white) 0%,#fbf3e0 100%);border-top:1px solid var(--line)}
+.about-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:70px;align-items:center}
+.stat{margin-bottom:44px}
+.stat:last-child{margin-bottom:0}
+.stat .num{font-size:clamp(2rem,4vw,2.8rem);font-weight:800;letter-spacing:-.02em;background:var(--grad-brand);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat .lbl{font-size:.92rem;color:var(--ink-dim)}
+.about-text h2{margin-bottom:26px}
+.section-title{font-family:'Michroma',sans-serif;font-size:clamp(1.3rem,3.6vw,2.1rem);letter-spacing:.32em;text-transform:uppercase;position:relative;padding-bottom:20px}
+.section-title::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:64px;height:3px;background:var(--grad-brand)}
+.about-text .section-title::after{left:0;transform:none}
+.about-text p{color:var(--ink-soft);margin-bottom:18px;max-width:560px}
+.about-text p strong{color:var(--ink)}
+.perks{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:34px}
+.perk{border:1px solid var(--line);padding:20px;font-size:.88rem;position:relative;background:var(--white)}
+.perk::before{content:'';position:absolute;top:-1px;left:-1px;right:-1px;height:3px;background:var(--grad-brand)}
+.perk .display{font-size:.62rem;letter-spacing:.18em;display:block;margin-bottom:8px;color:var(--accent-deep)}
+
+/* ===== REGISZTRÁCIÓ ===== */
+.reg{padding:120px 0;background:radial-gradient(ellipse 65% 50% at 50% 0%,rgba(247,177,25,.16),transparent 60%),linear-gradient(180deg,#181818,#0a0a0a);color:var(--bg);position:relative;overflow:hidden}
+.reg-giant{position:absolute;top:20px;left:50%;transform:translateX(-50%);font-family:'Archivo Black',sans-serif;font-size:clamp(4rem,16vw,13rem);line-height:1;color:transparent;-webkit-text-stroke:1px rgba(247,177,25,.22);white-space:nowrap;pointer-events:none;user-select:none}
+.reg .section-head{text-align:center;margin-bottom:60px;position:relative;z-index:2}
+.reg .section-title{color:var(--bg)}
+.reg .section-head p{color:#a0a09e;margin-top:18px;max-width:560px;margin-left:auto;margin-right:auto}
+.form-wrap{max-width:680px;margin:0 auto;position:relative;z-index:2}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.form-group{display:flex;flex-direction:column}
+.form-group.full{grid-column:1/-1}
+.form-group label{font-family:'Michroma',sans-serif;font-size:.56rem;letter-spacing:.22em;text-transform:uppercase;margin-bottom:10px;color:#a0a09e}
+.form-group label .req{color:var(--accent)}
+.form-group input{background:transparent;border:none;border-bottom:1px solid #4a4a48;padding:12px 2px;color:var(--bg);font-family:'Inter',sans-serif;font-size:1.05rem;transition:border-color .2s;border-radius:0}
+.form-group input:focus{outline:none;border-color:var(--accent)}
+.gdpr-row{grid-column:1/-1;display:flex;align-items:flex-start;gap:14px;padding:20px;border:1px solid #3a3a38;margin-top:8px}
+.gdpr-row input[type="checkbox"]{width:20px;height:20px;accent-color:var(--accent);margin-top:2px;flex-shrink:0}
+.gdpr-row label{font-size:.86rem;color:#a0a09e}
+.gdpr-row label .req{color:var(--accent)}
+.submit-btn{grid-column:1/-1;background:var(--grad-brand);color:var(--ink);border:none;font-family:'Michroma',sans-serif;font-size:.8rem;letter-spacing:.24em;text-transform:uppercase;padding:20px;cursor:pointer;transition:background .2s,color .2s;margin-top:14px}
+.submit-btn:hover{background:linear-gradient(135deg,#ffd96b 0%,#ffc133 50%,#f09d00 100%);color:var(--ink);box-shadow:0 10px 34px rgba(247,177,25,.35)}
+.submit-btn:disabled{opacity:.5;cursor:wait}
+.form-response{grid-column:1/-1;display:none;padding:16px 20px;font-size:.92rem;font-weight:600;border:1px solid}
+.form-response.success{display:block;border-color:#4caf7d;color:#8fd8ae;background:rgba(76,175,125,.08)}
+.form-response.error{display:block;border-color:var(--error);color:#ff8a8a;background:rgba(227,6,19,.08)}
+
+/* ===== FOOTER ===== */
+footer{padding:60px 0 40px;background:#0a0a0a;color:#7a7a78;font-size:.82rem;position:relative}
+footer::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad-brand)}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+footer .logo{font-family:'Michroma',sans-serif;font-size:.85rem;letter-spacing:.28em;text-transform:uppercase;color:var(--bg)}
+
+@media(max-width:900px){
+  .side-menu,.hero-marker{display:none}
+  .about-grid{grid-template-columns:1fr;gap:50px}
+}
+@media(max-width:640px){
+  .form-grid{grid-template-columns:1fr}
+  .perks{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== NAV ===== -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="logo">Chemical-Seed</a>
+    <a href="#regisztracio" class="nav-cta">Regisztrálok</a>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero" id="home">
+  <div class="hero-inner">
+    <!-- TODO iG: pontos cím a telephely-marker helyére -->
+    <div class="hero-marker">KAPOSVÁR · ÚJ TELEPHELY</div>
+    <nav class="side-menu">
+      <a href="#home">Kezdőlap</a>
+      <a href="#megnyito">A megnyitó</a>
+      <a href="#regisztracio">Regisztráció</a>
+    </nav>
+
+    <div class="hero-kicker">Telephely megnyitó</div>
+    <div class="hero-giant"><span class="thin">10.</span><span class="solid">15</span></div>
+
+    <div class="hero-photo">
+      <!-- TODO iG: cseréld le a kaposvári telephely / hero fotóra -->
+      <img src="hero.jpg" alt="Chemical-Seed új telephely Kaposváron" loading="eager">
+      <span class="caption">Kaposvár · új Chemical-Seed telephely</span>
+    </div>
+
+    <p class="hero-sub">Új telephelyet nyitunk Kaposváron. Legyél ott az első napon — ismerd meg bázisunkat, nézd meg élőben gépparkunkat, és találkozz csapatunkkal egy <strong>laza, baráti hangulatú megnyitón</strong>.</p>
+
+    <div class="hero-actions">
+      <a href="#regisztracio" class="btn-primary">Regisztrálok a megnyitóra</a>
+      <span class="btn-micro">Ingyenes regisztráció · Meglepetés minden látogatónak a helyszínen</span>
+    </div>
+
+    <!-- TODO iG: erősítsd meg a pontos nyitási időpontot (jelenleg 09:00-ra van beállítva) -->
+    <div class="countdown" id="countdown">
+      <div class="cd-box"><div class="num" id="cd-days">--</div><div class="lbl">nap</div></div>
+      <div class="cd-box"><div class="num" id="cd-hours">--</div><div class="lbl">óra</div></div>
+      <div class="cd-box"><div class="num" id="cd-mins">--</div><div class="lbl">perc</div></div>
+      <div class="cd-box"><div class="num" id="cd-secs">--</div><div class="lbl">mp</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- ===== A MEGNYITÓ (invitáló rész) ===== -->
+<section class="about" id="megnyito">
+  <div class="container">
+    <div class="about-grid">
+      <div>
+        <div class="stat"><div class="num">Új</div><div class="lbl">telephely Kaposváron</div></div>
+        <div class="stat"><div class="num">10.15</div><div class="lbl">2026. október 15.</div></div>
+        <div class="stat"><div class="num">3 márka</div><div class="lbl">JCB · KUHN · JOSKIN</div></div>
+      </div>
+      <div class="about-text">
+        <h2 class="section-title">A megnyitó</h2>
+        <p>Október 15-én <strong>hivatalosan is megnyitjuk kapuinkat Kaposváron</strong> — gyere el, és legyél az elsők között, akik élőben látják új telephelyünket és gépparkunkat.</p>
+        <p>Sétálj végig a bemutatótermen, próbáld ki élőben gépeinket, és beszélgess szakértő kollégáinkkal minden műszaki és finanszírozási kérdésről — mindezt egy oldott, baráti hangulatú napon.</p>
+        <div class="perks">
+          <div class="perk"><span class="display">Élő géppróbák</span>Ismerd meg élőben a JCB, KUHN és JOSKIN gépeket.</div>
+          <div class="perk"><span class="display">Szakértő kollégák</span>Csapatunk a helyszínen válaszol minden kérdésedre.</div>
+          <div class="perk"><span class="display">Nyitási meglepetés</span>Minden látogatót ajándékkal és frissítőkkel várunk.</div>
+          <div class="perk"><span class="display">Új telephely</span>Fedezd fel kaposvári bázisunkat és szolgáltatásainkat.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== REGISZTRÁCIÓ ===== -->
+<section class="reg" id="regisztracio">
+  <div class="reg-giant">REGISZTRÁLJ</div>
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title">Regisztráció</h2>
+      <p>Töltsd ki az űrlapot, és garantáld a helyed a megnyitó napján. A regisztráció ingyenes és kötelezettségmentes.</p>
+    </div>
+
+    <div class="form-wrap">
+      <form id="reg-form" class="form-grid" novalidate>
+        <div class="form-group">
+          <label for="mce-LNAME">Vezetéknév <span class="req">*</span></label>
+          <input type="text" name="LNAME" id="mce-LNAME" required autocomplete="family-name">
+        </div>
+        <div class="form-group">
+          <label for="mce-FNAME">Keresztnév <span class="req">*</span></label>
+          <input type="text" name="FNAME" id="mce-FNAME" required autocomplete="given-name">
+        </div>
+        <div class="form-group full">
+          <label for="mce-EMAIL">Email cím <span class="req">*</span></label>
+          <input type="email" name="EMAIL" id="mce-EMAIL" required autocomplete="email">
+        </div>
+        <div class="form-group full">
+          <label for="mce-PHONE">Telefonszám <span class="req">*</span></label>
+          <input type="tel" name="PHONE" id="mce-PHONE" required autocomplete="tel" placeholder="+36 00 000 0000">
+        </div>
+        <div class="form-group">
+          <label for="mce-MMERGE8">Település <span class="req">*</span></label>
+          <input type="text" name="MMERGE8" id="mce-MMERGE8" required autocomplete="address-level2">
+        </div>
+        <div class="form-group">
+          <label for="mce-MMERGE7">Cég</label>
+          <input type="text" name="MMERGE7" id="mce-MMERGE7" autocomplete="organization">
+        </div>
+        <div class="gdpr-row">
+          <input type="checkbox" id="gdpr" required>
+          <label for="gdpr">Elfogadom az adatkezelési tájékoztatót, és hozzájárulok adataim kezeléséhez a rendezvény szervezésével kapcsolatban. <span class="req">*</span></label>
+        </div>
+        <!-- Mailchimp honeypot -->
+        <div aria-hidden="true" style="position:absolute;left:-5000px"><input type="text" name="b_859ff0560bf14ca6c051f7f8e_4774a6baa8" tabindex="-1" value=""></div>
+        <div class="form-response" id="form-response"></div>
+        <button type="submit" class="submit-btn" id="submit-btn">Regisztrálok</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="logo">Chemical-Seed</div>
+      <p>© 2026 Chemical-Seed Kft. · Kaposvári telephely megnyitó — 2026. október 15.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ===== COUNTDOWN ===== */
+(function(){
+  // TODO iG: erősítsd meg a pontos nyitási időpontot, jelenleg 09:00-ra van állítva
+  var target = new Date('2026-10-15T09:00:00+02:00').getTime();
+  var d=document.getElementById('cd-days'),h=document.getElementById('cd-hours'),
+      m=document.getElementById('cd-mins'),s=document.getElementById('cd-secs');
+  function pad(n){return n<10?'0'+n:n}
+  function tick(){
+    var diff = target - Date.now();
+    if(diff<=0){d.textContent='00';h.textContent='00';m.textContent='00';s.textContent='00';return}
+    d.textContent = pad(Math.floor(diff/86400000));
+    h.textContent = pad(Math.floor(diff%86400000/3600000));
+    m.textContent = pad(Math.floor(diff%3600000/60000));
+    s.textContent = pad(Math.floor(diff%60000/1000));
+    setTimeout(tick, 1000);
+  }
+  tick();
+})();
+
+/* ===== MAILCHIMP JSONP SUBMIT ===== */
+(function(){
+  var form = document.getElementById('reg-form');
+  var btn = document.getElementById('submit-btn');
+  var resp = document.getElementById('form-response');
+  // TODO iG: ellenőrizd az f_id-t és hozz létre/válassz egy tag-et ehhez a kampányhoz
+  // (lásd: learnings.md — merge field, tag érték és f_id mindig ellenőrizendő élesítés előtt)
+  var MC_URL = 'https://xtratech.us18.list-manage.com/subscribe/post-json?u=859ff0560bf14ca6c051f7f8e&id=4774a6baa8&f_id=0015abe6f0';
+  var MC_TAG = 'TODO_KAPOSVAR_MEGNYITO_TAG';
+
+  function showResponse(type, msg){
+    resp.className = 'form-response ' + type;
+    resp.textContent = msg;
+    resp.scrollIntoView({behavior:'smooth', block:'nearest'});
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    resp.className = 'form-response';
+
+    var fields = ['LNAME','FNAME','EMAIL','PHONE','MMERGE8'];
+    for(var i=0;i<fields.length;i++){
+      var el = form.querySelector('[name="'+fields[i]+'"]');
+      if(!el.value.trim()){
+        showResponse('error','Kérjük, tölts ki minden kötelező mezőt!');
+        el.focus();
+        return;
+      }
+    }
+    var email = form.querySelector('[name="EMAIL"]').value.trim();
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+      showResponse('error','Kérjük, érvényes email címet adj meg!');
+      return;
+    }
+    if(!document.getElementById('gdpr').checked){
+      showResponse('error','A regisztrációhoz el kell fogadnod az adatkezelési tájékoztatót.');
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'Küldés...';
+
+    var allFields = ['LNAME','FNAME','EMAIL','PHONE','MMERGE8','MMERGE7'];
+    var params = [];
+    allFields.forEach(function(f){
+      params.push(f + '=' + encodeURIComponent(form.querySelector('[name="'+f+'"]').value.trim()));
+    });
+    params.push('MMERGE11=' + encodeURIComponent('Igen'));
+    params.push('tags=' + encodeURIComponent(MC_TAG));
+    params.push('b_859ff0560bf14ca6c051f7f8e_4774a6baa8=');
+
+    var cbName = 'mcCallback_' + Date.now();
+    window[cbName] = function(data){
+      btn.disabled = false;
+      btn.textContent = 'Regisztrálok';
+      delete window[cbName];
+      if(data.result === 'success'){
+        form.reset();
+        showResponse('success','Sikeres regisztráció! Találkozunk október 15-én Kaposváron, új telephelyünk megnyitóján!');
+      } else {
+        var msg = (data.msg || '').toLowerCase();
+        if(msg.indexOf('already subscribed') > -1 || msg.indexOf('már fel') > -1){
+          showResponse('success','Ezzel az email címmel már regisztráltál — találkozunk a megnyitón!');
+        } else {
+          showResponse('error','Hiba történt a küldés során. Kérjük, próbáld újra, vagy hívj minket telefonon!');
+        }
+      }
+    };
+
+    var script = document.createElement('script');
+    script.src = MC_URL + '&' + params.join('&') + '&c=' + cbName;
+    script.onerror = function(){
+      btn.disabled = false;
+      btn.textContent = 'Regisztrálok';
+      showResponse('error','Hálózati hiba történt. Kérjük, próbáld újra!');
+    };
+    document.body.appendChild(script);
+  });
+})();
+</script>
+</body>
+</html>
