@@ -8,8 +8,7 @@
 <title>Telephely Megnyitó Kaposváron | Chemical Seed</title>
 <meta name="description" content="Chemical-Seed új kaposvári telephelyének megnyitója 2026. október 15-én — agronómiai és műszaki megoldások egy helyen. Regisztrálj, és ünnepelj velünk!">
 
-<!-- TODO iG: hozz létre GoatCounter subdomaint ehhez a kampányhoz, ha szeretnéd mérni (pl. cs-kaposvar-megnyito.goatcounter.com) -->
-<script data-goatcounter="https://cs-kaposvar-megnyito.goatcounter.com/count"
+<script data-goatcounter="https://cs-kaposvar.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 
 <!-- Favicon -->
@@ -132,6 +131,8 @@ img{max-width:100%;display:block}
 .gdpr-row input[type="checkbox"]{width:20px;height:20px;accent-color:var(--accent);margin-top:2px;flex-shrink:0}
 .gdpr-row label{font-size:.86rem;color:#a0a09e}
 .gdpr-row label .req{color:var(--accent)}
+.gdpr-row label a{color:var(--accent);text-decoration:underline}
+.gdpr-row label a:hover{color:#ffd96b}
 .submit-btn{grid-column:1/-1;background:var(--grad-brand);color:var(--ink);border:none;font-family:'Michroma',sans-serif;font-size:.8rem;letter-spacing:.24em;text-transform:uppercase;padding:20px;cursor:pointer;transition:background .2s,color .2s;margin-top:14px}
 .submit-btn:hover{background:linear-gradient(135deg,#ffd96b 0%,#ffc133 50%,#f09d00 100%);color:var(--ink);box-shadow:0 10px 34px rgba(247,177,25,.35)}
 .submit-btn:disabled{opacity:.5;cursor:wait}
@@ -144,6 +145,8 @@ footer{padding:60px 0 40px;background:#0a0a0a;color:#7a7a78;font-size:.82rem;pos
 footer::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad-brand)}
 .footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
 footer .logo{font-family:'Michroma',sans-serif;font-size:.85rem;letter-spacing:.28em;text-transform:uppercase;color:var(--bg)}
+footer a{color:#a0a09e;text-decoration:underline}
+footer a:hover{color:var(--accent)}
 
 @media(max-width:900px){
   .side-menu,.hero-marker{display:none}
@@ -263,7 +266,7 @@ footer .logo{font-family:'Michroma',sans-serif;font-size:.85rem;letter-spacing:.
         </div>
         <div class="gdpr-row">
           <input type="checkbox" id="gdpr" required>
-          <label for="gdpr">Elfogadom az adatkezelési tájékoztatót, és hozzájárulok adataim kezeléséhez a rendezvény szervezésével kapcsolatban. <span class="req">*</span></label>
+          <label for="gdpr">Elfogadom az <a href="https://www.chemicalseed.hu/adatvedelmi-tajekoztato" target="_blank" rel="noopener">adatkezelési tájékoztatót</a>, és hozzájárulok adataim kezeléséhez a rendezvény szervezésével kapcsolatban. <span class="req">*</span></label>
         </div>
         <!-- Mailchimp honeypot -->
         <div aria-hidden="true" style="position:absolute;left:-5000px"><input type="text" name="b_859ff0560bf14ca6c051f7f8e_4774a6baa8" tabindex="-1" value=""></div>
@@ -279,7 +282,7 @@ footer .logo{font-family:'Michroma',sans-serif;font-size:.85rem;letter-spacing:.
   <div class="container">
     <div class="footer-inner">
       <div class="logo">Chemical-Seed</div>
-      <p>© 2026 Chemical-Seed Kft. · 7400 Kaposvár, Kaposfüredi út 285. · Telephely megnyitó, 2026. október 15.</p>
+      <p>© 2026 Chemical-Seed Kft. · 7400 Kaposvár, Kaposfüredi út 285. · Telephely megnyitó, 2026. október 15. · <a href="https://www.chemicalseed.hu/adatvedelmi-tajekoztato" target="_blank" rel="noopener">Adatvédelmi tájékoztató</a></p>
     </div>
   </div>
 </footer>
@@ -309,10 +312,9 @@ footer .logo{font-family:'Michroma',sans-serif;font-size:.85rem;letter-spacing:.
   var form = document.getElementById('reg-form');
   var btn = document.getElementById('submit-btn');
   var resp = document.getElementById('form-response');
-  // TODO iG: ellenőrizd az f_id-t és hozz létre/válassz egy tag-et ehhez a kampányhoz
-  // (lásd: learnings.md — merge field, tag érték és f_id mindig ellenőrizendő élesítés előtt)
-  var MC_URL = 'https://xtratech.us18.list-manage.com/subscribe/post-json?u=859ff0560bf14ca6c051f7f8e&id=4774a6baa8&f_id=0015abe6f0';
-  var MC_TAG = 'TODO_KAPOSVAR_MEGNYITO_TAG';
+  // TODO iG: teszteld élesítés előtt
+  var MC_URL = 'https://xtratech.us18.list-manage.com/subscribe/post-json?u=859ff0560bf14ca6c051f7f8e&id=4774a6baa8&f_id=003aabe6f0';
+  var MC_TAG = '3055923';
 
   function showResponse(type, msg){
     resp.className = 'form-response ' + type;
